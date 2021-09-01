@@ -215,6 +215,9 @@ button a {
   text-align: center;
 }
 
+ul {
+  padding: 0;
+}
 li {
   list-style: none;
 }
@@ -290,9 +293,81 @@ input {
     flex-direction: column;
     padding: 20px;
   }
-  .price-card-1,
-  .price-card-2,
-  .price-card-3 {
+  .price-card {
     width: calc(100%);
+    margin-bottom: 40px;
+  }
+  .price-card-bottom {
+    margin-bottom: 150px;
+  }
+  .price-card img {
+    width: 100%;
+    height: auto;
+  }
+  #form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #hero h1 {
+    font-size: 46px;
+  }
+  #hero p {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  #header-img {
+    height: 30px;
+  }
+  #header li {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  #icon-1,
+  #icon-2,
+  #icon-3 {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero h1 {
+    font-size: 36px;
+  }
+  #hero p {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  #header-img {
+    height: 25px;
+  }
+  #header li {
+    font-size: 18px;
+    padding-left: 30px;
+  }
+  #icon-1,
+  #icon-2,
+  #icon-3 {
+    width: 80px;
+  }
+  #footer a {
+    padding: 10px;
+  }
+  #features-item {
+    width: 100%;
+  }
+  #header {
+    justify-content: center;
   }
 }

@@ -1,0 +1,298 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #202020;
+  color: white;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+
+#header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  z-index: 10;
+  top: 0;
+  padding: 20px;
+  background-color: #202020;
+  border-radius: 0px 0px 20px 20px;
+}
+
+#nav-bar a {
+  color: white;
+}
+
+#hero {
+  padding: 150px 20px 150px 20px;
+  text-align: center;
+  width: 100%;
+}
+#hero h1,
+p {
+  margin: 0;
+}
+#hero p {
+  padding-top: 30px;
+  font-size: 30px;
+}
+#hero h1 {
+  font-size: 66px;
+  font-weight: 400;
+}
+
+.watch-cta p {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  padding-bottom: 20px;
+  color: #b6ff40;
+}
+
+h1 {
+  font-size: 56px;
+  text-align: center;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 56px;
+  margin: 0px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+#header-img {
+  height: 40px;
+  width: auto;
+}
+
+.highlight {
+  color: #b6ff40;
+  font-weight: 700;
+}
+
+header ul {
+  display: flex;
+}
+header li {
+  padding-left: 50px;
+  font-size: 24px;
+  list-style: none;
+}
+
+.bg {
+  background-color: #202020;
+}
+.bg-light {
+  background-color: white;
+  color: black;
+}
+.centering {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0px 20px 0px 20px;
+}
+
+#features {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  max-width: 1280px;
+}
+#features-item {
+  width: calc((100% / 3) - 20px);
+  border-radius: 5px;
+}
+
+#icon-1,
+#icon-2,
+#icon-3 {
+  width: 160px;
+  height: auto;
+  padding: 15px;
+}
+
+/* Easter egg ;) */
+#icon-2:hover {
+  filter: hue-rotate(-90deg) saturate(2000%);
+  transform: rotate(180deg);
+}
+
+#video-promo {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.claim-cta {
+  padding-top: 150px;
+}
+#pricing-cards {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: auto;
+  padding-bottom: 150px;
+  max-width: 1280px;
+}
+.price-card {
+  width: calc((100% / 2) - 40px);
+  border-radius: 5px;
+  border: 2px solid #202020;
+}
+.price-card img {
+  height: 500px;
+  width: auto;
+}
+.card-title {
+  background-color: #202020;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 36px;
+  background-color: #b6ff40;
+  border-style: none;
+  width: 100%;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: bold;
+  cursor: pointer;
+}
+button a {
+  color: black;
+}
+
+.fine-print {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+#footer {
+  color: white;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#form {
+  margin: auto;
+  width: 60%;
+  border-radius: 5px;
+  height: 100%;
+  padding-top: 50px;
+}
+input {
+  width: 100%;
+  padding: 20px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 24px;
+  border-radius: 5px;
+  border-style: none;
+  text-align: center;
+  border: 3px solid black;
+  outline-style: none;
+}
+#submit {
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 24px;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  background-color: #b6ff40;
+}
+#submit:hover {
+  background-color: black;
+  color: white;
+}
+
+#footer h1 {
+  font-weight: 400;
+  padding-top: 150px;
+}
+#footer a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#footer a:hover {
+  color: white;
+}
+#footer-links {
+  padding-top: 150px;
+}
+#copyright p {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 0;
+}
+#copyright {
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  #pricing-cards {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .price-card-1,
+  .price-card-2,
+  .price-card-3 {
+    width: calc(100%);
+  }
+}
